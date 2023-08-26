@@ -1,54 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Epic Math Games</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub - Your Ultimate Gaming Destination</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to Epic Math Games</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Games</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="GameHub Logo">
+                <h1>GameHub</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section class="featured-game">
-      <h2>Featured Game</h2>
-      <div class="game-preview">
-        <img src="game-preview.jpg" alt="Featured Game Preview">
-        <p>Just added this new game!</p>
-        <a href="playgame/getawaysh.html" class="play-button">Play Now</a>
-      </div>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to GameHub!</h2>
+            <p>Your ultimate destination for gaming excitement.</p>
+            <a href="#games" class="cta-button">Explore Games</a>
+        </div>
     </section>
 
-    <section class="more-games">
-      <h2>More Games</h2>
-      <div class="game-list">
+    <section id="games" class="game-list">
+        <h2>Popular Games</h2>
         <div class="game-card">
-          <img src="game1-preview.jpg" alt="Game 1 Preview">
-          <h3>Game 1</h3>
-          <a href="playgame/driftb.html" class="play-button">Play Now</a>
-        </div>
-        <div class="game-card">
-          <img src="game2-preview.jpg" alt="Game 2 Preview">
-          <h3>Game 2</h3>
-          <a href="playgame/getawaysh.html" class="play-button">Play Now</a>
+            <img src="game1-thumbnail.jpg" alt="Game 1">
+            <h3>Game 1</h3>
+            <p>Discover the epic world of Game 1. Are you ready?</p>
+            <a href="game1.html" class="play-button">Play Now</a>
         </div>
         <!-- Add more game cards here -->
-      </div>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2023 Epic Math Games. All rights reserved.</p>
-  </footer>
+    <section id="about" class="about-us">
+        <h2>About Us</h2>
+        <p>At GameHub, we are dedicated to bringing you the best gaming experience...</p>
+        <a href="about.html" class="learn-more-button">Learn More</a>
+    </section>
+
+    <section id="contact" class="contact-form">
+        <h2>Contact Us</h2>
+        <p>Got questions or feedback? Reach out to us!</p>
+        <form action="submit_contact_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 GameHub. All rights reserved.</p>
+    </footer>
 </body>
 </html>
