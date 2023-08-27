@@ -20,6 +20,33 @@
     </style>
 </head>
 <body>
-    <iframe src="/gameassets/7ec89185-db1c-46ac-8f4e-128ed93dc90b/content/lablockedgames.com/funblocked/getaway-shootout/index.html"></iframe>
+    <iframe id="myIframe" src="/gameassets/7ec89185-db1c-46ac-8f4e-128ed93dc90b/content/lablockedgames.com/funblocked/getaway-shootout/index.html"></iframe>
+
+    <script>
+        const iframe = document.getElementById("myIframe");
+        
+        // Function to handle resizing when fullscreen mode changes
+        function resizeIframe() {
+            if (document.fullscreenElement) {
+                iframe.style.width = "100vw";
+                iframe.style.height = "100vh";
+            } else {
+                iframe.style.width = "100%";
+                iframe.style.height = "100%";
+            }
+        }
+        
+        // Listen for fullscreen change events
+        document.addEventListener("fullscreenchange", resizeIframe);
+        
+        // Toggle fullscreen when the iframe is clicked
+        iframe.addEventListener("click", () => {
+            if (!document.fullscreenElement) {
+                iframe.requestFullscreen();
+            } else {
+                document.exitFullscreen();
+            }
+        });
+    </script>
 </body>
 </html>
