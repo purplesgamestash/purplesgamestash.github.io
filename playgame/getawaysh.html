@@ -14,17 +14,18 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 5px 0;
             text-align: center;
         }
 
         nav ul {
             list-style: none;
+            padding: 0;
         }
 
         nav ul li {
             display: inline;
-            margin-right: 20px;
+            margin-right: 15px;
         }
 
         nav a {
@@ -36,7 +37,7 @@
         iframe {
             position: absolute;
             width: 100%;
-            height: 85%; /* Adjust the height as needed */
+            height: 65%; /* Adjust the height as needed */
             border: none;
         }
         
@@ -47,12 +48,12 @@
         }
 
         .fullscreen-button, .new-tab-button {
-            padding: 8px 16px;
+            padding: 4px 8px;
             background-color: #ff6600;
             color: #fff;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 5px;
+            border-radius: 4px;
             margin-right: 10px;
             cursor: pointer;
         }
@@ -78,7 +79,7 @@
 
     <div class="buttons">
         <button class="fullscreen-button" onclick="toggleFullscreen()">Fullscreen</button>
-        <button class="new-tab-button" onclick="openInNewTab()">Open in New Tab</button>
+        <button class="new-tab-button" onclick="openInNewTab()">Open in about:blank</button>
     </div>
 
     <script>
