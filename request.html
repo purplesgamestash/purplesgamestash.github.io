@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Game - GameHub</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrollbars */
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 5px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .request-form {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            padding: 6px 12px;
+            background-color: #ff6600;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Games</a></li>
+                <li><a href="request.html">Request a game</a></li>
+                <li><a href="credits.html">Credits</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="request-form">
+        <h2>Request a Game</h2>
+        <p>Have a game in mind that you'd like to see on EpicMathGames? Let us know by filling out the form below:</p>
+        <form action="submit_game_request.php" method="POST">
+            <div class="form-group">
+                <label for="gameName">Game Name:</label>
+                <input type="text" id="gameName" name="gameName" required>
+            </div>
+            <div class="form-group">
+                <label for="gameLocation">Game Website (where you found it, doesn't matter if its blocked):</label>
+                <textarea id="gameLocation" name="gameLocation" required></textarea>
+            </div>
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
+</body>
+</html>
