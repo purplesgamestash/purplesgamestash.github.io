@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enriching Students</title>
     <link rel="stylesheet" href="/styles.css">
+    <style>
+        /* Add your existing styles here */
+
+        .game-cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .game-card {
+            width: calc(33.33% - 20px); /* Adjust as needed */
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #gameSearch {
+            padding: 8px;
+            width: 70%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,103 +47,131 @@
         </nav>
     </header>
 
-            <h2>Welcome to EpicMathGames!</h2>
-            <p>Your ultimate destination for gaming in class. (FINISH YOUR WORK FIRST)</p>
+    <h2>Welcome to EpicMathGames!</h2>
+    <p>Your ultimate destination for gaming in class. (FINISH YOUR WORK FIRST)</p>
+
     <section id="games" class="game-list">
-        <div class="game-card">
-            <img src="/img/getawaysh.jpg" alt="Getaway Shootout">
-            <h3>Getaway Shootout</h3>
-            <a href="/playgame/getawaysh" class="play-button">Play Now</a>
+        <div class="search-bar">
+            <input type="text" id="gameSearch" placeholder="Search for a game...">
         </div>
-        <div class="game-card">
-            <img src="/img/2048.png" alt="1">
-            <h3>1</h3>
-            <a href="/playgame/1" class="play-button">Play Now</a>
-        </div>
-        <div class="game-card">
-            <img src="/img/1v1lol.jpg" alt="1v1.lol">
-            <h3>Getaway Shootout</h3>
-            <a href="/playgame/1v1lol" class="play-button">Play Now</a>
-        </div>
-        <div class="game-card">
-            <img src="/img/2048.png" alt="2048">
-            <h3>2048</h3>
-            <a href="/playgame/2048" class="play-button">Play Now</a>
-        </div>
-        <div class="game-card">
-            <img src="/img/2048.png" alt="2048mul">
-            <h3>2048 Multitask</h3>
-            <a href="/playgame/2048mul" class="play-button">Play Now</a>
-        </div>
-        <div class="game-card">
-            <img src="/img/9007.jpg" alt="900719925470992">
-            <h3>900719925470992</h3>
-            <a href="/playgame/9007199254740992" class="play-button">Play Now</a>
-        </div>
-        <div class="game-card">
-            <img src="/img/agesofc.jpg" alt="agesofconflict">
-            <h3>Ages Of Conflict</h3>
-            <a href="/playgame/agesofconflict" class="play-button">Play Now</a>
-        </div>
-        <div class="game-card">
-            <img src="/img/airpod.jpg" alt="gimmetheairpod">
-            <h3>Gimme The Airpod</h3>
-            <a href="/playgame/airpod" class="play-button">Play Now</a>
-        </div>
-        <div class="game-card">
-            <img src="/img/db.jpg" alt="driftBoss">
-            <h3>Drift Boss</h3>
-            <a href="/playgame/driftb" class="play-button">Play Now</a>
-        </div>
-        <div class="game-card">
-            <img src="/img/drivem.jpg" alt="Drive Mad">
-            <h3>Drive Mad</h3>
-            <a href="/playgame/drivemad" class="play-button">Play Now</a>
-        </div>
-        <div class="game-card">
-            <img src="/img/duck1.jpg" alt="duck1">
-            <h3>Duck Life 1</h3>
-            <a href="/playgame/duck1" class="play-button">Play Now</a>
-        </div>
-        <div class="game-card">
-            <img src="/img/duck2.jpg" alt="duck2">
-            <h3>Duck Life 2</h3>
-            <a href="/playgame/duck2" class="play-button">Play Now</a>
-        </div>
-        <div class="game-card">
-            <img src="/img/duck3.jpg" alt="duck3">
-            <h3>Duck Life 3</h3>
-            <a href="/playgame/duck3" class="play-button">Play Now</a>
+        <div class="game-cards-container">
+            <div class="game-card">
+                <img src="/img/getawaysh.jpg" alt="Getaway Shootout">
+                <h3>Getaway Shootout</h3>
+                <a href="/playgame/getawaysh.html" class="play-button">Play Now</a>
+            </div>
+            <div class="game-card">
+                <img src="/img/2048.png" alt="1">
+                <h3>1</h3>
+                <a href="/playgame/1.html" class="play-button">Play Now</a>
+            </div>
+            <div class="game-card">
+                <img src="/img/1v1lol.jpg" alt="1v1.lol">
+                <h3>1v1.lol</h3>
+                <a href="/playgame/1v1lol.html" class="play-button">Play Now</a>
+            </div>
+            <div class="game-card">
+                <img src="/img/2048.png" alt="2048">
+                <h3>2048</h3>
+                <a href="/playgame/2048.html" class="play-button">Play Now</a>
+            </div>
+            <div class="game-card">
+                <img src="/img/2048.png" alt="2048mul">
+                <h3>2048 Multitask</h3>
+                <a href="/playgame/2048mul.html" class="play-button">Play Now</a>
+            </div>
+            <div class="game-card">
+                <img src="/img/9007.jpg" alt="900719925470992">
+                <h3>900719925470992</h3>
+                <a href="/playgame/9007199254740992.html" class="play-button">Play Now</a>
+            </div>
+            <div class="game-card">
+                <img src="/img/agesofc.jpg" alt="agesofconflict">
+                <h3>Ages Of Conflict</h3>
+                <a href="/playgame/agesofconflict.html" class="play-button">Play Now</a>
+            </div>
+            <div class="game-card">
+                <img src="/img/airpod.jpg" alt="gimmetheairpod">
+                <h3>Gimme The Airpod</h3>
+                <a href="playgame/airpod.html"
+            </div>
+            <div class="game-card">
+                <img src="/img/db.jpg" alt="driftBoss">
+                <h3>Drift Boss</h3>
+                <a href="/playgame/driftb.html" class="play-button">Play Now</a>
+            </div>
+            <div class="game-card">
+                <img src="/img/drivem.jpg" alt="Drive Mad">
+                <h3>Drive Mad</h3>
+                <a href="/playgame/drivemad.html" class="play-button">Play Now</a>
+            </div>
+            <div class="game-card">
+                <img src="/img/duck1.jpg" alt="duck1">
+                <h3>Duck Life 1</h3>
+                <a href="/playgame/duck1.html" class="play-button">Play Now</a>
+            </div>
+            <div class="game-card">
+                <img src="/img/duck2.jpg" alt="duck2">
+                <h3>Duck Life 2</h3>
+                <a href="/playgame/duck2.html" class="play-button">Play Now</a>
+            </div>
+            <div class="game-card">
+                <img src="/img/duck3.jpg" alt="duck3">
+                <h3>Duck Life 3</h3>
+                <a href="playgame/duck3.html"
+            </div>
+            <a href="/playgame/duck3.html" class="play-button">Play Now</a>
         </div>
         <div class="game-card">
             <img src="/img/pvz.jpg" alt="pvz">
             <h3>Plants VS. Zombies</h3>
-            <a href="/playgame/pvz" class="play-button">Play Now</a>
+            <a href="/playgame/pvz.html" class="play-button">Play Now</a>
         </div>
         <div class="game-card">
             <img src="/img/slope.jpg" alt="1">
             <h3>Slope</h3>
-            <a href="/playgame/slope" class="play-button">Play Now</a>
+            <a href="/playgame/slope.html" class="play-button">Play Now</a>
         </div>
         <div class="game-card">
             <img src="/img/sm64.jpg" alt="sm64">
             <h3>Super Mario 64</h3>
-            <a href="/playgame/sm64" class="play-button">Play Now</a>
+            <a href="/playgame/sm64.html" class="play-button">Play Now</a>
         </div>
         <div class="game-card">
             <img src="/img/sort.png" alt="sort">
             <h3>Sort The Court</h3>
-            <a href="/playgame/sorthec" class="play-button">Play Now</a>
+            <a href="/playgame/sorthec.html" class="play-button">Play Now</a>
         </div>
-        <!-- Add more game cards here -->
+            <!-- Add more game cards here -->
+        </div>
     </section>
 
     <section id="about" class="about-us">
         <h2>About Us</h2>
         <p>At EpicMathGames, we are dedicated to bringing you the best gaming experience.</p>
     </section>
+    
     <footer>
         <p>&copy; 2023 EpicMathGames. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Search functionality
+        const gameSearchInput = document.getElementById('gameSearch');
+        const gameCardsContainer = document.querySelector('.game-cards-container');
+        const gameCards = gameCardsContainer.querySelectorAll('.game-card');
+
+        gameSearchInput.addEventListener('input', function() {
+            const searchTerm = gameSearchInput.value.toLowerCase();
+            gameCards.forEach(card => {
+                const gameName = card.querySelector('h3').textContent.toLowerCase();
+                if (gameName.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
