@@ -11,6 +11,8 @@
         .game-card {
             width: calc(33.33% - 10px); /* Adjust as needed */
             margin-bottom: 40px;
+            height: 300px; /* Set a fixed height for the game card */
+            overflow: hidden; /* Hide any overflowing content */
         }
 
         .search-bar {
@@ -26,14 +28,22 @@
         }
 
         .game-cards-container {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center; /* Center vertically */
+            margin-top: 20px;
         }
 
         .game-card {
             flex-basis: calc(33.33% - 20px); /* Adjust as needed */
             margin-bottom: 40px;
+        }
+        
+        .game-card img {
+            width: 100%; /* Make the image cover the entire width */
+            height: 100%; /* Make the image cover the entire height */
+            object-fit: cover; /* Resize the image while maintaining its aspect ratio */
         }
 
     </style>
@@ -144,6 +154,30 @@
                 <img src="/img/sort.png" alt="sort">
                 <h3>Sort The Court</h3>
                 <a href="/playgame/sorthec.html" class="play-button">Play Now</a>
+            </div>
+            <img src="/img/ovo.png" alt="sort">
+                <h3>OvO</h3>
+                <a href="/playgame/ovo.html" class="play-button">Play Now</a>
+            </div>
+            <img src="/img/backrooms.jpg" alt="sort">
+                <h3>The Backrooms</h3>
+                <a href="/playgame/backrooms.html" class="play-button">Play Now</a>
+            </div>
+            <img src="/img/subway.jpg" alt="sort">
+                <h3>Subway Surfers</h3>
+                <a href="/playgame/subway.html" class="play-button">Play Now</a>
+            </div>
+            <img src="/img/baldi.jpg" alt="sort">
+                <h3>Baldi's Basics</h3>
+                <a href="/playgame/baldi.html" class="play-button">Play Now</a>
+            </div>
+            <img src="/img/tanuki.jpg" alt="sort">
+                <h3>Tanuki Sunset</h3>
+                <a href="/playgame/tanuki.html" class="play-button">Play Now</a>
+            </div>
+            <img src="/img/slither.png" alt="sort">
+                <h3>Slither.io</h3>
+                <a href="/playgame/slitherio.html" class="play-button">Play Now</a>
             </div>
             <!-- Add more game cards here -->
         </div>
