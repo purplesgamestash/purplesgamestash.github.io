@@ -25,9 +25,34 @@
         </div>
     </section>
     
-    <script src="gba.js"></script>
+    <script src="/gameassets/IodineGBA-master/index.html"></script>
     <script>
-        // Your JavaScript for handling ROM loading and emulator initialization
+    document.addEventListener("DOMContentLoaded", function () {
+    const gbaContainer = document.getElementById("gba");
+    const romLinks = document.querySelectorAll(".rom-list a");
+
+    const emulator = new GameBoyAdvance();
+
+    function loadRom(romURL) {
+        emulator.loadRomFromFile(romURL, () => {
+            emulator.runStable();
+        });
+    }
+
+    romLinks.forEach((romLink) => {
+        romLink.addEventListener("click", function (event) {
+            event.preventDefault();
+            const romURL = this.getAttribute("data-rom");
+            loadRom(romURL);
+        });
+    });
+
+    gbaContainer.appendChild(emulator.screen);
+
+    emulator.setLogger(function (level, error) {
+        console.log(`[jsGBA] ${level}: ${error}`);
+    });
+});  
     </script>
 </body>
 </html>
