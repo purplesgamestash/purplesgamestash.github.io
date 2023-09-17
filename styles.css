@@ -15,7 +15,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-weight: bold;
 }
 
@@ -24,7 +24,7 @@ nav a {
     background-image: url('hero-background.jpg');
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: #000;
     text-align: center;
     padding: 100px 0;
 }
