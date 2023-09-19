@@ -130,7 +130,7 @@ body {
 }
 
 header {
-    background-color: #007bff;
+    background-color: rgba(42, 5, 205);;
     color: white;
     text-align: center;
     padding: 10px 0;
