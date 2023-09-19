@@ -15,7 +15,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: rgba(84, 88, 84, 0);
+    color: rgb#fff
     font-weight: bold;
 }
 
@@ -24,7 +24,7 @@ nav a {
     background-image: url('hero-background.jpg');
     background-size: cover;
     background-position: center;
-    color: rgba(84, 88, 84, 0);
+    color: rgba(42, 5, 205);;
     text-align: center;
     padding: 100px 0;
 }
@@ -56,7 +56,7 @@ nav a {
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
-    box-shadow: 0 0 10px rgb(205, 5, 5);
+    box-shadow: 0 0 10px rgb(42, 5, 205);
 }
 
 .game-card img {
@@ -77,7 +77,7 @@ nav a {
 
 /* About Us Styles */
 .about-us {
-    background-color: #f4f4f4;
+    background-color: #333;
     padding: 50px 0;
     text-align: center;
 }
