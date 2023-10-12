@@ -76,11 +76,33 @@
             border-radius: 4px;
             cursor: pointer;
         }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            max-width: 100px; /* Adjust the logo size as needed */
+            height: auto;
+        }
+
+        .logo h1 {
+            font-size: 36px;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
+            <div class="logo">
+                <img src="/img/logo-no-background.png" alt="funne gah mez Logo"> <!-- Replace with your logo image path -->
+                <h1>PurplesGameStash</h1>
+            </div>
+            </div>
             <ul>
                 <li><a href="index.html">Games</a></li>
                 <li><a href="request.html">Request a game</a></li>
