@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enriching Students</title>
+    <style>
+                @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrollbars */
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 5px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        iframe {
+            position: absolute;
+            width: 100%;
+            height: 80%; /* Adjust the height as needed */
+            border: none;
+        }
+
+        .buttons {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .fullscreen-button, .new-tab-button {
+            padding: 4px 8px;
+            background-color: #ff6600;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>PurplesGameStash</h1>
+            </div>
+            <ul>
+                <li><a href="/index.html">Games</a></li>
+                <li><a href="/request.html">Request a game</a></li>
+                <li><a href="/credits.html">Credits</a></li>
+        </nav>
+    </header>
+
+    <iframe id="gameIframe" src="https://nearpod-currentlyconnectedtolesson.onrender.com/assets/scrapmetal/index.html"></iframe>
+
+    <div class="buttons">
+        <button class="fullscreen-button" onclick="toggleFullscreen()">Fullscreen</button>
+        <button class="new-tab-button" onclick="openInNewTab()">Open in about:blank</button>
+    </div>
+
+    <script>
+        const gameIframe = document.getElementById("gameIframe");
+
+        // Toggle fullscreen mode
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                gameIframe.requestFullscreen();
+            } else {
+                document.exitFullscreen();
+            }
+        }
+
+        // Open the game in a new tab using about:blank
+        function openInNewTab() {
+            window.open("about:blank").document.write('<iframe src="https://nearpod-currentlyconnectedtolesson.onrender.com/assets/scrapmetal/index.html" style="width: 100%; height: 100vh; border: none;"></iframe>');
+        }
+    </script>
+</body>
+</html>
