@@ -10,3 +10,5 @@ Also if you skid the games, you are terrible.
 This site is available not only on GitHub but also on Bitbucket! I think I left the old netlify one up so uhh yeah.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a8ba8d01-af22-4409-a443-6769ef12d4b4/deploy-status)](https://app.netlify.com/sites/enrichingstudents/deploys)
+
+(NOTE) Newer import being moved to github.com/purplesgamestash/purplesgamestash
